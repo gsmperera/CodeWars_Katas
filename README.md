@@ -1,2 +1,2 @@
 # CodeWars_Katas
-My solutions for codewars.com katas
+My JavaScript solutions for codewars.com katas
