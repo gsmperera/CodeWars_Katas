@@ -2,19 +2,18 @@ console.log(document.getElementsByTagName("h1")[0].innerText);
 
 // My Solution
 function findNb(m) {
-    
-    // 1^3 + 2^3 + 3^3 + ... + n^3 = m
-    //                (n(n+1)/2)^2 = m
-    //                    n(n+1)/2 = Math.sqrt(m)
-    //                     n^2 + n = 2*Math.sqrt(m)
-    //           (n + 1/2)^2 - 1/4 = 2*Math.sqrt(m)
-    //                 (n + 1/2)^2 = 2*Math.sqrt(m) + 1/4
-    //                             = (8*Math.sqrt(m) + 1) / 4
-    //                     n + 1/2 = Math.sqrt( (8*Math.sqrt(m) + 1) ) / 2
-    //                           n = ( Math.sqrt( (8*Math.sqrt(m) + 1) ) - 1 )/ 2
-    
-    let n = ( Math.sqrt( 8*Math.sqrt(m) + 1 ) - 1 ) / 2;
-    return (n%1 == 0) ? n : -1;
+  // 1^3 + 2^3 + 3^3 + ... + n^3 = m
+  //                (n(n+1)/2)^2 = m
+  //                    n(n+1)/2 = Math.sqrt(m)
+  //                     n^2 + n = 2*Math.sqrt(m)
+  //           (n + 1/2)^2 - 1/4 = 2*Math.sqrt(m)
+  //                 (n + 1/2)^2 = 2*Math.sqrt(m) + 1/4
+  //                             = (8*Math.sqrt(m) + 1) / 4
+  //                     n + 1/2 = Math.sqrt( (8*Math.sqrt(m) + 1) ) / 2
+  //                           n = ( Math.sqrt( (8*Math.sqrt(m) + 1) ) - 1 )/ 2
+
+  let n = (Math.sqrt(8 * Math.sqrt(m) + 1) - 1) / 2;
+  return n % 1 == 0 ? n : -1;
 }
 
 // More Solutions

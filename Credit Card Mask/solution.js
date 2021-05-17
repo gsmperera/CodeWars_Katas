@@ -2,12 +2,12 @@ console.log(document.getElementsByTagName("h1")[0].innerText);
 
 // My Solution
 function maskify(cc) {
-    let text = "";
-    for (let x in cc) {
-        if (x < cc.length-4) text += "#";
-        else text += cc[x];
-    }
-    return text;
+  let text = "";
+  for (let x in cc) {
+    if (x < cc.length - 4) text += "#";
+    else text += cc[x];
+  }
+  return text;
 }
 
 // More Solutions
@@ -20,6 +20,6 @@ function maskify(cc) {
 // }
 
 //Tests
-console.log(maskify('4556364607935616'));
-console.log(maskify('1'));
-console.log(maskify('11111'));
+console.log(maskify("4556364607935616"));
+console.log(maskify("1"));
+console.log(maskify("11111"));

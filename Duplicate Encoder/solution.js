@@ -2,15 +2,15 @@ console.log(document.getElementsByTagName("h1")[0].innerText);
 
 // My Solution
 function duplicateEncode(word) {
-    let newStr = "";
-    for (let i in word) {
-        const reg = "[" + word[i] + "]";
-        const letter = new RegExp(reg, "gi");
-        const list = word.match(letter);
-        if (list.length > 1) newStr += ")";
-        else newStr += "(";
-    }
-    return newStr;
+  let newStr = "";
+  for (let i in word) {
+    const reg = "[" + word[i] + "]";
+    const letter = new RegExp(reg, "gi");
+    const list = word.match(letter);
+    if (list.length > 1) newStr += ")";
+    else newStr += "(";
+  }
+  return newStr;
 }
 
 // More Solutions

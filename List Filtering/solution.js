@@ -1,19 +1,19 @@
 console.log(document.getElementsByTagName("h1")[0].innerText);
 
 function filter_list(l) {
-    let list = [];
-    for (let x in l) {
-        let y = typeof l[x];
-        if (y == "number") {
-            list.push(l[x]);
-        }
+  let list = [];
+  for (let x in l) {
+    let y = typeof l[x];
+    if (y == "number") {
+      list.push(l[x]);
     }
-    return list;
+  }
+  return list;
 }
 
-console.log(filter_list([1, 2, 'a', 'b']));                       // answer should == [[1, 2]]
-console.log(filter_list([1, 'a', 'b', 0, 15]));                  //answer should == [1, 0, 15]
-console.log(filter_list([1, 2, 'aasf', '1', '123', 123]));      //answer should == [1, 2, 123]
+console.log(filter_list([1, 2, "a", "b"])); // answer should == [[1, 2]]
+console.log(filter_list([1, "a", "b", 0, 15])); //answer should == [1, 0, 15]
+console.log(filter_list([1, 2, "aasf", "1", "123", 123])); //answer should == [1, 2, 123]
 
 /* More Solutions
 

@@ -2,7 +2,7 @@ console.log(document.getElementsByTagName("h1")[0].innerText);
 
 // My Solution
 function solution(string) {
-    return string.replace(/(?=[A-Z])/g, " ");
+  return string.replace(/(?=[A-Z])/g, " ");
 }
 
 // More Solutions
@@ -14,5 +14,5 @@ function solution(string) {
 // }
 
 //Tests
-console.log(solution('camelCasing'));
-console.log(solution('camelCasingTest'));
+console.log(solution("camelCasing"));
+console.log(solution("camelCasingTest"));

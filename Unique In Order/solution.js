@@ -1,16 +1,16 @@
 console.log(document.getElementsByTagName("h1")[0].innerText);
 
 // My Solution
-let uniqueInOrder=function(iterable){
-    if (iterable == []) return [];
-    let pre = iterable[0];
-    let strList = [iterable[0]];
-    for (let i in iterable) {
-        if (iterable[i] != pre) strList.push(iterable[i]);
-        pre = iterable[i];
-    }
-    return strList;
-}
+let uniqueInOrder = function (iterable) {
+  if (iterable == []) return [];
+  let pre = iterable[0];
+  let strList = [iterable[0]];
+  for (let i in iterable) {
+    if (iterable[i] != pre) strList.push(iterable[i]);
+    pre = iterable[i];
+  }
+  return strList;
+};
 
 // More Solutions
 // let uniqueInOrder = function(iterable) {
@@ -18,4 +18,4 @@ let uniqueInOrder=function(iterable){
 // }
 
 //Tests
-console.log(uniqueInOrder('AAAABBBCCDAABBB'));
+console.log(uniqueInOrder("AAAABBBCCDAABBB"));

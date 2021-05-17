@@ -1,9 +1,9 @@
 console.log(document.getElementsByTagName("h1")[0].innerText);
 
 // My Solution
-const binaryArrayToNumber = arr => {
-    const bin = arr.join("");
-    return parseInt(bin, 2);
+const binaryArrayToNumber = (arr) => {
+  const bin = arr.join("");
+  return parseInt(bin, 2);
 };
 
 // More Solutions
@@ -15,7 +15,7 @@ const binaryArrayToNumber = arr => {
 // }
 
 //Tests
-console.log(binaryArrayToNumber([0,0,0,1]),);
-console.log(binaryArrayToNumber([0,0,1,0]),);
-console.log(binaryArrayToNumber([1,1,1,1]),);
-console.log(binaryArrayToNumber([0,1,1,0]),);
+console.log(binaryArrayToNumber([0, 0, 0, 1]));
+console.log(binaryArrayToNumber([0, 0, 1, 0]));
+console.log(binaryArrayToNumber([1, 1, 1, 1]));
+console.log(binaryArrayToNumber([0, 1, 1, 0]));
