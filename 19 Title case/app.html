@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title case</title>
+    <style>
+        body {
+            margin: 30px;
+            font-family: sans-serif;
+            color: rgb(50, 50, 50);
+            background-color: rgb(200, 200, 200);
+        }
+        li {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Title case</h1>
+    <h2>Instructions</h2>
+    <p>A string is considered to be in title case if each word in the string is either (a) capitalised (that is, only the first letter of the word is in upper case) or (b) considered to be an exception and put entirely into lower case unless it is the first word, which is always capitalised.</p>
+    <p>Write a function that will convert a string into title case, given an optional list of exceptions (minor words). The list of minor words will be given as a string with each word separated by a space. Your function should ignore the case of the minor words string -- it should behave in the same way even if the case of the minor word string is changed.</p>
+    <h3>Arguments (Haskell)</h3>
+    <ul>
+        <li>First argument: space-delimited list of minor words that must always be lowercase except for the first word in the string.</li>
+        <li>Second argument: the original string to be converted.</li>
+    </ul>
+    <h3>Arguments (Other languages)</h3>
+    <ul>
+        <li>First argument (required): the original string to be converted.</li>
+        <li>Second argument (optional): space-delimited list of minor words that must always be lowercase except for the first word in the string. The JavaScript/CoffeeScript tests will pass undefined when this argument is unused.</li>
+    </ul>
+    <h2>Example</h2>
+    <ul>
+        <li>titleCase('a clash of KINGS', 'a an the of') // should return: 'A Clash of Kings'</li>
+        <li>titleCase('THE WIND IN THE WILLOWS', 'The In') // should return: 'The Wind in the Willows'</li>
+        <li>titleCase('the quick brown fox') // should return: 'The Quick Brown Fox'</li>
+    </ul>
+    <script src="solution.js"></script>
+</body>
+</html>
