@@ -12,7 +12,7 @@ Examples
 
 // Solution
 function validParentheses(parens) {
-    return (parens.length = 0
+    return (parens.length === 0
         ? true // return true for empty strings
         : parens
               .split('') // conver string to arry '(())' => [ (, (, ), ) ]
